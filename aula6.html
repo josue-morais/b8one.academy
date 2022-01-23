@@ -1,5 +1,38 @@
 <html>
     <head>
-        <title>Aula 06 - b8one.academy</title>
+        <title>Aula 06 - b8one.academy</title>  
     </head>
+    <body>
+        <form action="bomasma" method="post">
+            <label for="firstNameInput">
+                Seu nome
+            </label>
+            <input type="text" name="firstname" placeholder="digite seu primeiro nome" id="firstNameInput" required>
+            <label for="ageinput">
+                Sua idade
+            </label>
+            <input type="number" name="age" min="18" max="65" placeholder="Sua idade" id="ageinput">
+            <label for="emailInput">
+                Seu e-mail
+            </label>
+            <input type="email" name="email" placeholder="Digite seu e-mail" id="emailInput"> 
+            <select name="gender" id="genderField">
+                <option value="gender" disabled>
+                    Selecione o seu gênero
+                </option>
+                <option value="masculino">
+                    Masculino
+                </option>
+                <option value="feminino">
+                    Feminino
+                </option>
+                <option value="outros">
+                    Outros
+                </option>
+            </select>
+            <button type="submit">
+                Enviar
+            </butto>
+        </form>
+    </body>
 </html>
